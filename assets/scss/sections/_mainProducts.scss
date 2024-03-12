@@ -1,0 +1,188 @@
+/* PRODUCTS - START*/
+
+.main{
+  &-row{
+    width: 100%;
+    height: 100%;
+    
+    &-products{
+      height: 100%;
+      margin-top: 251px;
+
+      @include media(650){
+        margin-top: 200px;
+      }
+      @include media(520){
+        margin-top: 150px;
+      }
+
+      &-top{
+        &__text{
+          color: $black-color;
+          font-size: 56px;
+          font-weight: 400;
+          line-height: 114.286%;
+
+          @include media(800){
+            font-size: 50px;
+          }
+          @include media(650){
+            font-size: 45px;
+          }
+          @include media(580){
+            font-size: 40px;
+          }
+          @include media(520){
+            font-size: 35px;
+          }
+          @include media(460){
+            font-size: 30px;
+          }
+          @include media(410){
+            font-size: 25px;
+          }
+  
+          span{
+            color: $blue-color;
+            font-weight: 400;
+            line-height: 114.286%;
+          }
+        }
+      }
+
+      &-bottom{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 29px;
+        gap: 102px;
+
+        @include media(710){
+          gap: 60px;
+        }
+
+
+        &__top{
+          width: 100%;
+          height: 60%;
+          display: flex;
+          gap: 126px;
+
+          @include media(1055){
+            gap: 100px;
+          }
+          @include media(800){
+            gap: 80px;
+          }
+          @include media(710){
+            flex-direction: column;
+            align-items: center;
+          }
+          &__title{
+            width: 60%;
+
+            @include media(710){
+              width: 100%;
+            }
+  
+            &__text{
+              width: 100%;
+              color: $black-color;
+              padding-top: 28px;
+              font-size: 20px;
+              font-weight: 400; 
+              line-height: 140%;
+
+              @include media(800){
+                font-size: 17px;
+              }
+              @include media(710){
+                font-size: 20px;
+              }
+              @include media(580){
+                font-size: 17px;
+              }
+  
+              a{
+                color: $blue-color;
+              }
+            }
+          }
+          &__img{
+
+            @include media(900){
+              min-width: 350px;
+              min-height: 350px;
+              
+            }
+            @include media(710){
+              max-width: 350px;
+              max-height: 350px;
+              
+            }
+            img{
+              width: 100%;
+              height: 100%;
+            }
+
+          }
+        }
+        &__bottom{
+          width: 100%;
+          height: 40%;
+          display: flex;
+          gap: 114px;
+
+          @include media(870){
+            gap: 90px;
+          }
+          @include media(840){
+            gap: 70px;
+          }
+          @include media(800){
+            gap: 50px;
+          }
+          @include media(770){
+            gap: 40px;
+          }
+          @include media(760){
+            gap: 30px;
+          }
+          @include media(750){
+            gap: 10px;
+          }
+          @include media(710){
+            flex-direction: column;
+            align-items: center;
+          }
+
+          &__img{
+
+            @include media(900){
+              min-width: 340px;
+              min-height: 340px;
+              
+            }
+            @include media(710){
+              max-width: 350px;
+              max-height: 350px;
+              
+            }
+            img{
+              width: 100%;
+              height: 100%;
+            }
+
+          }
+        }
+
+      }
+    }
+
+
+  }
+}
+
+
+/* PRODUCTS - END*/

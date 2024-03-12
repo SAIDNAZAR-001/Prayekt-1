@@ -1,0 +1,234 @@
+/* JOIN US - START*/
+
+.joinUs{
+   width: 100%;
+   margin-top: 264px;
+   display: flex;
+   flex-direction: column;
+   gap: 168px;
+
+   @include media(960){
+      margin-top: 150px;
+   }
+   @include media(780){
+      margin-top: 110px;
+   }
+   @include media(600){
+      margin-top: 80px;
+   }
+   @include media(550){
+      margin-top: 50px;
+   }
+   @include media(420){
+      gap: 120px;
+   }
+
+
+   &-top{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 62px;
+      
+      &__content{
+         width: 100%;
+         display: flex;
+         gap: 49px;
+
+         @include media(960){
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+         }
+
+
+         img{
+            @include media(1090){
+               width: 600px;
+            }
+            @include media(1060){
+               width: 550px;
+            }
+            @include media(1010){
+               width: 500px;
+            }
+            @include media(550){
+               width: 350px;
+            }
+         }
+         
+         
+         
+         &__text{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+
+            @include media(420){
+               gap: 30px;
+            }
+            
+            h1{
+               font-size: 54px;
+               font-weight: 400;
+               line-height: 64px;
+               color: $black-color;
+
+               @include media(1195){
+                  font-size: 50px;
+               }
+               @include media(1160){
+                  font-size: 46px;
+               }
+               @include media(1125){
+                  font-size: 42px;
+               }
+                @include media(580){
+                  font-size: 40px;
+                  line-height: 50px;
+                }
+                @include media(520){
+                  font-size: 35px;
+                }
+                @include media(460){
+                  font-size: 30px;
+                  line-height: 30px;
+                }
+                @include media(410){
+                  font-size: 25px;
+                }
+
+               span{
+                  color: $blue-color;
+               }
+            }
+            h3{
+               font-size: 28px;
+               font-weight: 400;
+               line-height: 40px;
+               color: $black-color;
+
+               @include media(800){
+                  font-size: 17px;
+                }
+                @include media(710){
+                  font-size: 20px;
+                }
+                @include media(580){
+                  line-height: 20px;
+                  font-size: 17px;
+                }
+            }
+            p{
+               font-size: 20px;
+               font-weight: 400;
+               line-height: 28px;
+               color: $black-color;
+
+
+               @include media(800){
+                  font-size: 17px;
+                }
+                @include media(710){
+                  font-size: 14px;
+                }
+                @include media(580){
+                  font-size: 12px;
+                  line-height: 20px;
+                }
+            }
+         }
+      }
+
+      &__buttons{
+         width: 303px;
+         height: 78px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 29px 113px;
+         color: $blue-color;
+         border-radius: 410px;
+         border: 1px solid $blue-color;
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 20px;
+         align-items: center;
+         transition: all 0.3s ease-in-out;
+         
+         
+         @include media(550){
+            width: 240px;
+            padding: 20px 80px;
+         }
+         @include media(420){
+            width: 180px;
+            height: 50px;
+            padding: 10px 50px;
+            border-radius: 210px;
+            font-size: 16px;
+         }
+
+
+         &:hover{
+            transition: all 0.3s ease-in-out;
+            background-color: $blue-color;
+            color: #fff;
+         }
+      }
+   }
+   &-bottom{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      font-weight: 400;
+      line-height: 40px;
+      color: $black-color;
+
+      &__content{
+         width: 100%;
+         display: flex;
+         gap: 28px;
+
+         @include media(1090){
+            overflow-x: scroll;
+         }
+
+         
+         &__one{
+            width: 364px;
+            height: 257px;
+            min-width: 331px;
+            border-radius: 28px;
+            padding: 42px 30px;
+            background-color: #E8F4FF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 25px;
+
+            &__text{
+               font-size: 28px;
+               line-height: 40px;
+               color: $black-color;
+            }
+            &__buttons{
+               width: 101px;
+               font-size: 20px;
+               line-height: 28px;
+               color: $blue-color;
+               transition: all 0.3s ease-in-out;
+               border-bottom: 1px solid #E8F4FF;
+               
+               &:hover{
+                  transition: all 0.3s ease-in-out;
+                  border-bottom: 1px solid $blue-color;
+               }
+            }
+         }
+      }
+   }
+}
+
+/* JOIN US - END*/

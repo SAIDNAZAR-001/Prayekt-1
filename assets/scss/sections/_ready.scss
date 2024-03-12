@@ -1,0 +1,165 @@
+/* READY - START*/
+
+.ready{
+    width: 100%;
+    height: 939px;
+    margin-top: 98px;
+
+    @include media(1240){
+        height: 800px;
+    }
+    @include media(1070){
+        height: 750px;
+    }
+    @include media(960){
+        height: 680px;  
+    }
+    @include media(880){
+        height: 620px;  
+    }
+    @include media(760){
+        height: 520px;  
+    }
+    @include media(640){
+        height: 440px;  
+    }
+    @include media(580){
+        height: 380px;  
+    }
+    @include media(420){
+        height: 300px;  
+    }
+    @include media(380){
+        height: 250px;  
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        z-index: 1;
+
+        @include media(1360){
+            height: auto;
+        }
+    }
+
+    &-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        padding-top: 325px;
+
+        @include media(1300){
+            padding-top: 250px;
+        }
+        @include media(1130){
+            padding-top: 200px;
+        }
+        @include media(1000){
+            padding-top: 180px;
+        }
+        @include media(960){
+            padding-top: 150px;
+        }
+        @include media(860){
+            padding-top: 120px;
+        }
+        @include media(720){
+            padding-top: 80px;
+        }
+        @include media(550){
+            padding-top: 50px;
+        }
+
+        h1{
+            font-size: 84px;
+            font-weight: 400;
+            line-height: 92px;
+            color: #fff;
+
+            @include media(1050){
+                font-size: 78px;
+            }
+            @include media(1000){
+                font-size: 74px;
+            }
+            @include media(920){
+                font-size: 70px;
+            }
+            @include media(860){
+                font-size: 68px;
+            }
+            @include media(780){
+                font-size: 64px;
+                line-height: 64px;
+            }
+            @include media(720){
+                font-size: 58px;
+            }
+            @include media(660){
+                font-size: 54px;
+            }
+            @include media(630){
+                font-size: 50px;
+            }
+            @include media(590){
+                font-size: 46px;
+            }
+            @include media(550){
+                font-size: 42px;
+            }
+            @include media(500){
+                font-size: 38px;
+                line-height: 50px;
+            }
+            @include media(460){
+                font-size: 34px;
+                line-height: 40px;
+            }
+            @include media(400){
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+    }
+    &-row{
+        height: 100%;
+    }
+    &-buttons{
+        margin-top: 5px;
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            padding: 29px 113px;
+            border: 1px solid #fff;
+            border-radius: 410px;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+
+
+            @include media(630){
+                padding: 20px 80px;
+                font-size: 16px;
+             }
+             @include media(550){
+                padding: 10px 50px;
+                border-radius: 210px;
+                font-size: 14px;
+             }
+
+            &:hover{
+                transition: all 0.3s ease-in-out;
+                background-color: #fff;
+                color: $blue-color;
+            }
+        }
+    }
+}

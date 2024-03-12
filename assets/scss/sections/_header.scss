@@ -1,0 +1,194 @@
+/* HEADER - START*/
+
+.header{
+  border-radius: 0px 0px 60px 60px;
+  background: #1F3F86;
+
+  
+
+    &-row{
+    @include flex(center, end);
+    gap: 91px;
+    padding-top: 28px;
+    margin-right: 150px;
+
+    @include media(855){
+      margin-right: 90px;
+    }
+    @include media(750){
+      gap: 60px;
+    }
+    @include media(640){
+      margin-right: 50px;
+    }
+    @include media(555){
+      gap: 40px;
+      margin-right: 25px;
+    }
+
+      &__left{
+        display: flex;
+        gap: 48px;
+        color: $white-color;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+
+        @include media(750){
+          gap: 30px;
+        }
+        @include media(640){
+          font-size: 15px;
+        }
+        @include media(555){
+          gap: 15px;
+          font-size: 12px;
+        }
+        @include media(420){
+          gap: 15px;
+          font-size: 10px;
+        }
+
+        a{
+          &:hover{
+            color: #d1d1d1;
+          }
+        }
+      }
+      &__right{
+        color: $white-color;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 153.846%;
+        text-transform: uppercase;
+
+        @include media(640){
+          font-size: 10px;
+        }
+        @include media(555){
+          font-size: 8px;
+        }
+
+          &:hover{
+            color: #d1d1d1;
+          }
+      }
+    }
+
+    &-banner{
+      display: flex;
+      flex-direction: column;
+      margin: 149px 228px 89px 183px;
+      gap: 150px;
+      margin-top: 149px;
+
+
+      @include media(1050){
+        margin-left: 120px;
+      }
+      @include media(990){
+        gap: 100px;
+        margin-top: 100px;
+        margin-left: 80px;
+      }
+      @include media(855){
+        margin-right: 50px;
+      }
+      @include media(750){
+        margin-left: 50px;
+        gap: 50px;
+        margin-bottom: 60px;
+      }
+      @include media(555){
+        margin-top: 50px;
+        margin-left: 25px;
+        gap: 25px;
+        margin-bottom: 60px;
+      }
+
+
+      &__title{
+        width: 869px;
+        color: $white-color;
+        font-size: 84px;
+        font-weight: 400;
+        line-height: 109.524%;
+
+        @include media(950){
+          width: 669px;
+          font-size: 64px;
+        }
+        @include media(750){
+          width: 500px;
+          font-size: 45px;
+        }
+        @include media(640){
+          width: 450px;
+        }
+        @include media(555){
+          width: 350px;
+          font-size: 35px;
+        }
+        @include media(420){
+          width: 300px;
+          font-size: 30px;
+        }
+      }
+
+      &__sobtitle{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+        button svg{
+          transition: all 0.3s ease-in-out;
+
+          @include media(640){
+            width: 45px;
+            height: 45px;
+          }
+          @include media(555){
+            width: 40px;
+            height: 40px;
+          }
+          @include media(420){
+            width: 35px;
+            height: 35px;
+          }
+          &:hover{
+            transform: rotate(-90deg);
+          }
+        }
+
+        &__text{
+          width: 545px;
+          color: $white-color;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+
+        @include media(950){
+          width: 500px;
+        }
+        @include media(750){
+          width: 450px;
+        }
+        @include media(640){
+          width: 330px;
+          font-size: 15px;
+        }
+        @include media(555){
+          width: 330px;
+          font-size: 12px;
+        }
+        @include media(420){
+          width: 300px;
+          font-size: 10px;
+        }
+        
+        }
+      }
+    }
+}
+
+/* HEADER - END*/

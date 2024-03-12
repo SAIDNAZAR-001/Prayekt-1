@@ -1,0 +1,309 @@
+/* CLIENTS - START*/
+
+.clients{
+  width: 100%;
+  margin-top: 80px;
+  background-color: #EFF7FF;
+  position: relative;
+  z-index: 2;
+
+  @include media(710){
+    margin-top: 0px;
+  }
+  
+  img{
+    width: 100%;
+    max-height: 1030px;
+    background-color: #EFF7FF;
+    position: absolute;
+    z-index: 1;
+  }
+  &-title{
+    display: flex;
+    gap: 167px;
+    padding-top: 161px;
+    position: relative;
+    z-index: 1;
+
+    @include media(1035){
+      gap: 120px;
+      padding-top: 140px;
+    }
+    @include media(950){
+      gap: 100px;
+      padding-top: 120px;
+    }
+    @include media(860){
+      gap: 80px;
+    }
+    @include media(790){
+      gap: 60px;
+      padding-top: 80px;
+    }
+    @include media(700){
+      padding-top: 60px;
+    }
+    @include media(640){
+        padding-top: 40px;
+    }
+    @include media(540){
+      gap: 40px;
+      padding-top: 20px;
+    }
+    @include media(470){
+      gap: 40px;
+      padding-top: 20px;
+    }
+    @include media(420){
+      gap: 20px;
+    }
+
+    &__left{
+      color: $black-color;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 140%;
+
+      @include media(860){
+        font-size: 18px;
+      }
+      @include media(700){
+        font-size: 16px;
+      }
+      @include media(640){
+        font-size: 14px;
+      }
+      @include media(540){
+        font-size: 12px;
+      }
+      @include media(470){
+        font-size: 10px;
+      }
+      @include media(420){
+        font-size: 9px;
+      }
+    }
+    &__right{
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      &__line{
+        width: 56px;
+        height: 1px;
+        background: #9563FF;
+      }
+      &__text{
+        color: $black-color;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+        text-transform: uppercase;
+
+        @include media(860){
+          font-size: 18px;
+        }
+        @include media(700){
+          font-size: 16px;
+        }
+        @include media(640){
+          font-size: 14px;
+        }
+        @include media(540){
+          font-size: 12px;
+        }
+        @include media(470){
+          font-size: 10px;
+        }
+        @include media(420){
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  &-sobtitle{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 30%;
+    z-index: 1;
+
+    &__textTitle{
+      width: 656px;
+      color: $black-color;
+      font-size: 28px;
+      padding-top: 59px;
+      font-weight: 400;
+      line-height: 142.857%;
+
+      @include media(1035){
+        font-size: 25px;
+      }
+      @include media(950){
+        width: 500px;
+        font-size: 22px;
+      }
+      @include media(860){
+        width: 450px;
+        font-size: 20px;
+      }
+      @include media(700){
+        width: 400px;
+        font-size: 18px;
+      }
+      @include media(640){
+        width: 350px;
+        font-size: 16px;
+      }
+      @include media(540){
+        width: 300px;
+        font-size: 14px;
+      }
+      @include media(470){
+        padding-top: 45px;
+        width: 250px;
+        font-size: 12px;
+      }
+      @include media(420){
+        padding-top: 35px;
+        width: 250px;
+        font-size: 10px;
+      }
+    }
+    &__textSobtitle{
+      color: $black-color;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 140%;
+
+      @include media(1035){
+        font-size: 18px;
+      }
+      @include media(950){
+        font-size: 16px;
+      }
+      @include media(860){
+        font-size: 14px;
+      }
+      @include media(700){
+        font-size: 12px;
+      }
+      @include media(540){
+        font-size: 10px;
+      }
+      @include media(420){
+        font-size: 9px;
+      }
+    }
+    &__buttons{
+      display: flex;
+      gap: 28px;
+      padding-top: 136px;
+
+      @include media(1035){
+        padding-top: 100px;
+      }
+      @include media(950){
+        padding-top: 80px;
+      }
+      @include media(860){
+        padding-top: 60px;
+      }
+      @include media(700){
+        padding-top: 40px;
+      }
+      @include media(640){
+        gap: 22px;
+        padding-top: 20px;
+      }
+      @include media(470){
+        gap: 18px;
+      }
+      @include media(420){
+        gap: 14px;
+      }
+
+      &__svg1{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+
+        &:hover svg path{
+          transition: all 0.3s ease-in-out;
+          fill: #fff;
+        }
+        &:hover{
+          transition: all 0.3s ease-in-out;
+          background-color: $blue-color;
+          border-radius: 50%;
+          transform: rotate(90deg);
+        }
+        svg{
+          border-radius: 50%;
+  
+          @include media(960){
+            width: 50px;
+            height: 50px;
+          }
+          @include media(700){
+            width: 45px;
+            height: 45px;
+          }
+          @include media(540){
+            width: 40px;
+            height: 40px;
+          }
+          @include media(470){
+            width: 35px;
+            height: 35px;
+          }
+          
+          
+        }
+      }
+      &__svg2{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+
+        &:hover svg path{
+          transition: all 0.3s ease-in-out;
+          fill: #fff;
+        }
+        &:hover{
+          transition: all 0.3s ease-in-out;
+          background-color: $blue-color;
+          border-radius: 50%;
+          transform: rotate(-90deg);
+        }
+        svg{
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out;
+  
+          @include media(960){
+            width: 50px;
+            height: 50px;
+          }
+          @include media(700){
+            width: 45px;
+            height: 45px;
+          }
+          @include media(540){
+            width: 40px;
+            height: 40px;
+          }
+          @include media(470){
+            width: 35px;
+            height: 35px;
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+
+/* CLIENTS - END*/
